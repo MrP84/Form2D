@@ -34,7 +34,7 @@ abstract class Form2d {
     $this->y            = 0;
     $this->fillColor    = 'black';
     $this->strokeColor  = 'black';
-    $this->strokeWidth  = 1;
+    $this->strokeWidth  = 4;
   }
 
   abstract public function draw();
@@ -56,7 +56,7 @@ abstract class Form2d {
      *
      * @return self
      */
-    public function setX(integer x position of the svg form center $x)
+    public function setX($x)
     {
         $this->x = $x;
 
@@ -80,7 +80,7 @@ abstract class Form2d {
      *
      * @return self
      */
-    public function setY(integer y position of the svg form center $y)
+    public function setY($y)
     {
         $this->y = $y;
 
@@ -104,7 +104,7 @@ abstract class Form2d {
      *
      * @return self
      */
-    public function setFillColor(string fill color = background color $fillColor)
+    public function setFillColor($fillColor)
     {
         $this->fillColor = $fillColor;
 
@@ -121,14 +121,14 @@ abstract class Form2d {
         return $this->strokeColor;
     }
 
-    /** 
+    /**
      * Set the value of Stroke Color
      *
      * @param string stroke color strokeColor
      *
      * @return self
      */
-    public function setStrokeColor(string stroke color $strokeColor)
+    public function setStrokeColor($strokeColor)
     {
         $this->strokeColor = $strokeColor;
 
@@ -152,7 +152,7 @@ abstract class Form2d {
      *
      * @return self
      */
-    public function setStrokeWidth(integer stroke width $strokeWidth)
+    public function setStrokeWidth($strokeWidth)
     {
         $this->strokeWidth = $strokeWidth;
 
